@@ -38,6 +38,7 @@ template = """
         <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
         <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
     <![endif]-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.5.0/Chart.min.js"></script>
 
 </head>
 
@@ -54,7 +55,7 @@ template = """
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#">Start Bootstrap</a>
+                <a class="navbar-brand" href="#">MARTA Beacons</a>
             </div>
             <!-- Collect the nav links, forms, and other content for toggling -->
             <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
@@ -79,8 +80,8 @@ template = """
     <header class="header-image">
         <div class="headline">
             <div class="container">
-                <h1>One Page Wonder</h1>
-                <h2>Will Knock Your Socks Off</h2>
+                <h1>Team H MARTABeacons</h1>
+                <h2>A new way of navigation and advertisement</h2>
             </div>
         </div>
     </header>
@@ -96,22 +97,22 @@ template = """
 
         <!-- First Featurette -->
         <div class="featurette" id="about">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
-            <h2 class="featurette-heading">This First Heading
-                <span class="text-muted">Will Catch Your Eye</span>
+            <img class="featurette-image img-circle img-responsive pull-right" src="https://upload.wikimedia.org/wikipedia/commons/2/2d/Raspberry-Pi-2-Bare-FL.jpg">
+            <h2 class="featurette-heading">Bluetooth Beacons
+                <span class="text-muted">for Navigation, Advertising, and Emergency Rsponse</span>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead">Placed at strategic points around MARTA stations, our bluetooth beacons have many uses. MARTA will know more about their foot traffic and be able to fine toon advertising. In addition emercencies </p>
         </div>
 
         <hr class="featurette-divider">
 
         <!-- Second Featurette -->
         <div class="featurette" id="services">
-            <img class="featurette-image img-circle img-responsive pull-left" src="http://placehold.it/500x500">
-            <h2 class="featurette-heading">The Second Heading
-                <span class="text-muted">Is Pretty Cool Too.</span>
+            <img class="featurette-image img-circle img-responsive pull-left" src="">
+            <h2 class="featurette-heading">Realtime Data
+                <span class="text-muted">Number of People by each Beacon</span>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead">To the left is a live pie chart of the number of devices near each beacon(every beacon is a different color).</p>
         </div>
 
         <hr class="featurette-divider">
@@ -119,10 +120,10 @@ template = """
         <!-- Third Featurette -->
         <div class="featurette" id="contact">
             <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
-            <h2 class="featurette-heading">The Third Heading
-                <span class="text-muted">Will Seal the Deal.</span>
+            <h2 class="featurette-heading">The
+                <span class="text-muted">Squad</span>
             </h2>
-            <p class="lead">Donec ullamcorper nulla non metus auctor fringilla. Vestibulum id ligula porta felis euismod semper. Praesent commodo cursus magna, vel scelerisque nisl consectetur. Fusce dapibus, tellus ac cursus commodo.</p>
+            <p class="lead">Our team! We had a great time. Thanks to MARTA and everyone else for this opportunity.</p>
         </div>
 
         <hr class="featurette-divider">
