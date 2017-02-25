@@ -83,6 +83,14 @@ DATABASES = {
         'OPTIONS': {
             'read_default_file': 'Beacon/my.cnf',
         },
+    },
+    'production': {
+        'ENGINE': 'django.db.backends.mysql',
+        'NAME': os.environ['MYSQL_DATABASE'],
+        'USER': os.environ['MYSQL_USER'],
+        'PASSWORD': os.environ['MYSQL_PASSWORD'],
+        'HOST': os.environ['MYSQL_HOST'],   # Or an IP Address that your DB is hosted on
+        'PORT': '3306',
     }
 }
 
