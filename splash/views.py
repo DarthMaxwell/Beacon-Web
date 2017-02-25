@@ -78,6 +78,7 @@ template = """
 
     <!-- Full Width Image Header -->
     <header class="header-image">
+	
         <div class="headline">
             <div class="container">
                 <h1>Team H MARTABeacons</h1>
@@ -119,7 +120,7 @@ template = """
 
         <!-- Third Featurette -->
         <div class="featurette" id="contact">
-            <img class="featurette-image img-circle img-responsive pull-right" src="http://placehold.it/500x500">
+            <img class="featurette-image img-circle img-responsive pull-right" src="https://lh3.googleusercontent.com/-gI8isMMwQ7Q/WLHufVEMn5I/AAAAAAAAB2w/glTOpv2c7kc6aMPtIHjrMLrUMxf_j5SXQCL0B/h439/2017-02-25.png">
             <h2 class="featurette-heading">The
                 <span class="text-muted">Squad</span>
             </h2>
