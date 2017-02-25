@@ -18,6 +18,12 @@ class Beacon_Reading(models.Model):
     user_id = models.IntegerField()
     distance = models.CharField(max_length=200)
 
+    class Meta:
+        db_table = 'beacon_reading'
+
 class Stations(models.Model):
     station_id = models.IntegerField(primary_key=True)
     station_name = models.CharField(max_length=200)
+
+    class Meta:
+        db_table = 'stations'
