@@ -37,6 +37,7 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
+    'splash',
 ]
 
 MIDDLEWARE_CLASSES = [
@@ -76,12 +77,12 @@ WSGI_APPLICATION = 'Beacon.wsgi.application'
 
 DATABASES = {
     'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-#        'ENGINE': 'django.db.backends.mysql',
-#        'OPTIONS': {
-#            'read_default_file': 'Beacon/my.cnf',
-#        },
+#        'ENGINE': 'django.db.backends.sqlite3',
+#        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'ENGINE': 'django.db.backends.mysql',
+        'OPTIONS': {
+            'read_default_file': 'Beacon/my.cnf',
+        },
     }
 }
 
@@ -118,8 +119,21 @@ USE_L10N = True
 
 USE_TZ = True
 
+# These are from Heroku docs:
+# https://devcenter.heroku.com/articles/django-assets
+PROJECT_ROOT = os.path.dirname(os.path.abspath(__file__))
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.9/howto/static-files/
+<<<<<<< HEAD
 
 STATIC_URL = '/static/favicon.ico/'
+=======
+STATIC_ROOT = os.path.join(PROJECT_ROOT, 'staticfiles')
+STATIC_URL = '/static/'
+
+# Extra places for collectstatic to find static files.
+STATICFILES_DIRS = (
+    os.path.join(PROJECT_ROOT, 'static'),
+)
+>>>>>>> ce4a3b07c4488f95bf592e675cb58813c5fe8e8f
